@@ -1,6 +1,4 @@
 
-
-
 var gameWords = ["yemi", "is","very","cool", "man!"];
 
 function randomWord(Words){
@@ -117,6 +115,16 @@ function startNewRound (game){
        } 
        }
 }
+
+var myGame = {
+    words: gameWords,
+    wins: wins,
+    losses: losses,
+    round: setupRound(randomWord(gameWords))
+
+};
+
+
 // Now that you can check if you should start a new round, you need to create a function to start a new round on the game. To do this, create a 
 // function named startNewRound that takes a single argument: the game object. This function is going to update the round on the game object. 
 // It should:
